@@ -1,2 +1,2 @@
 # Kauru
-Kauru is a little alpha proyect, to buy and sell of you want!
+Kauru is a little alpha proyect, to buy and sell what you want!
