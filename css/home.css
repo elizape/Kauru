@@ -25,7 +25,7 @@ div.main {
   margin: auto;
 }
 
-h1 {
+h4 {
   color: rgb(78, 78, 78);
   margin: 0;
   padding: 30px 0px;
@@ -36,7 +36,7 @@ h1 {
 .content {
   display: block;
   width: 100%;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px;
 }
 
 /* -- Productos -- */
@@ -48,6 +48,7 @@ h1 {
 }
 
 .product {
+  transition: 0.4s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,6 +60,10 @@ h1 {
   padding: 0;
   margin: auto;
   box-shadow: 0px 0px 2px 0px #00000073;
+}
+
+.product:hover{
+  box-shadow: 0px 0px 5px 0px #00000073
 }
 
 .product a {
@@ -103,7 +108,7 @@ a h5.product-title {
 a>.product-img {
   transition: 0.4s;
   object-position: center;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
   max-height: 281px;
@@ -119,4 +124,67 @@ a>.product-img {
 
 a>.product-img:hover {
   transform: scale(1.3);
+}
+
+/* -- individual content -- */
+
+.content-individual{
+  display: flex;
+  /* background-color: rgb(248, 249, 249); */
+  padding: 30px 0;
+  box-shadow: 0px 0px 2px 0px #00000073;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-product-descrption{
+  margin-right: 20px;
+  width: 500px;
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.product-content{
+  display: flex;
+  align-items: flex-end;
+  border-left: 1.5px solid #b1b1b1;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  height: 100%;
+  width: 500px;
+}
+
+.product-content button{
+  display: inline;
+}
+
+.product-content button a{
+  text-decoration: none;
+  color: white;
+}
+
+.product-content button:hover{
+  background-color: rgb(49, 49, 49);
+  border: 1px solid rgb(49, 49, 49);
+}
+
+.product-content-description{
+  padding-bottom: 15px;
+}
+
+h6{
+  color: rgb(78, 78, 78);
+  margin: 0;
+  padding: 0 0 15px 0;
+  text-align: center;
+  font-size: 23px;
+}
+
+.product-content p{
+  color: #565656;
+  margin-bottom: 0 !important;
+  text-align: justify;
 }
