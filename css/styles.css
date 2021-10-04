@@ -189,7 +189,7 @@ body {
 
 /* -- Scroll Bar -- */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 8px;
     background-color: #fff;
 }
@@ -202,6 +202,21 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     background: rgb(187, 187, 187);
+} */
+
+body::-webkit-scrollbar{
+    transition: 0.4s;
+    transition-duration: 0.4s;
+    width: 12px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    transition: 0.4s;
+    transition-duration: 0.4s;
+    background: linear-gradient(#ffc800c5, #be2ac6d0);
+    border-radius: 5px; 
+    border: 3px solid #fff;
 }
 
 /* -- Footer -- */
